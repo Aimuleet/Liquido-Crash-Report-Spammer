@@ -52,7 +52,7 @@ public class Main {
         }
     }
 
-    /* from the original Liquido Client*/
+    /*from the original Liquido Client*/
     public static String replace(String replacement) {
         return replacement.replaceAll("\n", "-----").replaceAll("\\{", "").replaceAll("\\}", "").replaceAll(" ", "%20").replaceAll("<", "-").replaceAll(">", "-").replaceAll("@", "%40");
     }
