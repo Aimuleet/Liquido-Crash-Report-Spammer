@@ -18,7 +18,7 @@ async fn send_request() {
     let mut disconnected = false;
     while (!disconnected) {
         let url: Uri = website.parse().unwrap();
-        println!("Sent request: {}", website);
+        println!("Sent request");
         match client.get(url).await {
             Ok(res) => { println!("Response: {}", res.status()) }
             Err(err) => { println!("Error: {}", err); disconnected = true; }
