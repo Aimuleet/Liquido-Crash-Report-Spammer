@@ -6,7 +6,6 @@ use futures::prelude::*;
 use tokio::prelude::*;
 
 fn main() {
-    let args: Vec<String> = env::args().collect();
     let mut rt = tokio::runtime::Runtime::new().unwrap();
     rt.block_on(send_request());
 }
